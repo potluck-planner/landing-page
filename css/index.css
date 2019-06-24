@@ -48,7 +48,13 @@ header {
   }
 }
 header .potluck-title {
+  margin-right: 100px;
   width: 400px;
+}
+@media (max-width: 500px) {
+  header .potluck-title {
+    margin-right: 0;
+  }
 }
 nav {
   width: 100%;
