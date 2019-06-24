@@ -4,7 +4,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-    @media @mobile
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   .potluck-title {
     width: 400px;
   }

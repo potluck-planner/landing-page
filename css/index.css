@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #6a7fdb;
+  color: #040f0f;
 }
 a {
   font-size: 4rem;
@@ -40,6 +40,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 header .potluck-title {
   width: 400px;
