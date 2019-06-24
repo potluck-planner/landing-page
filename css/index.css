@@ -7,7 +7,7 @@ html {
     margin-left: 20px;
   }
 }
-body {
+html body {
   background-color: #fcfffc;
   font-size: 2rem;
 }
