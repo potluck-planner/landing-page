@@ -1,6 +1,11 @@
 header {
-  // position: fixed;
   width: 100%;
-  // top: 0;
   background-color: @sec-bg;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    @media @mobile
+  .potluck-title {
+    width: 400px;
+  }
 }
