@@ -4,7 +4,15 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  @media @mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   a {
     width: 200px;
+    @media @mobile {
+      margin-bottom: 20px;
+    }
   }
 }

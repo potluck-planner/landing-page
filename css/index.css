@@ -50,6 +50,7 @@ header {
 header .potluck-title {
   margin-right: 100px;
   width: 400px;
+  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   header .potluck-title {
@@ -63,8 +64,20 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 nav a {
   width: 200px;
+}
+@media (max-width: 500px) {
+  nav a {
+    margin-bottom: 20px;
+  }
 }
 footer {
   width: 460px;
