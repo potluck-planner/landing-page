@@ -1,11 +1,16 @@
 footer {
-  width: 460px;
+  width: 1000px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
+  @media @mobile {
+    width: 460px;
+  }
 }
 
 h6 {
   background-color: @footer-bg;
+  border-radius: 8px;
   font-size: 1.4rem;
   text-align: center;
   color: @main-bg;

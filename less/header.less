@@ -1,19 +1,31 @@
-header {
-  width: 100%;
+.smallNav {
+  width: 1000px;
   background-color: @sec-bg;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-    @media @mobile {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  @media @mobile {
+    width: 460px;
+    flex-wrap: wrap;
+  }
   .potluck-title {
-    margin-right: 100px;
     width: 400px;
+    height: 86px;
+    margin-right: 50px;
     margin-bottom: 20px;
     @media @mobile {
+      margin-left: 30px;
+    }
+  }
+  .signUp {
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media @mobile {
       margin-right: 0;
+      justify-content: space-between;
+      height: 100px;
     }
   }
 }

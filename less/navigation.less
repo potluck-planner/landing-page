@@ -1,18 +1,30 @@
 nav {
-  width: 100%;
+  width: 300px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   @media @mobile {
+    width: 460px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    margin-left: -12px;
+    margin-bottom: 10px;
   }
   a {
-    width: 200px;
+    justify-content: space-around;
+    width: 60px;
     @media @mobile {
-      margin-bottom: 20px;
+      width: 420px;
+      font-size: 3rem;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid @font-color;
+    }
+  }
+  a:hover {
+    @media @mobile {
+      color: @h1-color;
+      border: 2px solid @h1-color;
     }
   }
 }
