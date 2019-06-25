@@ -1,3 +1,5 @@
+//navbar
+
 .smallNav{
     box-sizing: border-box;
     line-height: 1.6em;
@@ -54,4 +56,59 @@ nav a{
       font-size: 6rem;
       text-align: center;
     }
+}
+//tabs
+
+.features{
+    width: 100%;
+   
+   .features-contents{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+   }
+
+.features-content{
+    display: none;
+    width: 90%;
+    
+    .features-content-title{
+        font-size: 2.4em;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+
+}
+
+.features-content-selected{
+    display: block;
+}
+
+.features-tabs{
+    display: flex;
+    background-color: @indigo;
+}
+
+.features-tab{
+    padding: 20px 25px;
+    font-size: 24px;
+    background-color: @indigo;
+    border-right: 1px solid white;
+    color: @white;
+    cursor: pointer;
+    &:hover {
+      background-color: @lavender;
+}
+}
+.features-tab-selected {
+    z-index:2;
+    border-right: 1px solid @indigo;
+    background-color: white;
+    color: black;
+    &:hover {
+        background-color: white;
+    }
+}
 }
