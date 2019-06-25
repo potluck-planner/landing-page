@@ -1,21 +1,22 @@
 .smallNav {
-  border: 2px solid blue;
   width: 1000px;
   background-color: @sec-bg;
   display: flex;
   flex-direction: row;
+  @media @mobile {
+    width: 460px;
+  }
   .potluck-title {
     width: 400px;
     height: 86px;
-    border: 2px solid red;
-    margin-right: 10px;
+    margin-right: 50px;
     margin-bottom: 20px;
   }
   .signUp {
-    width: 280px;
-    border: 2px solid red;
-    margin-right: 10px;
-    flex-direction: row;
-    justify-content: center;
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

@@ -1,13 +1,6 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 500px) {
-  html {
-    text-align: center;
-    width: 460px;
-    margin-left: 20px;
-  }
-}
 body {
   width: 1000px;
   margin-left: auto;
@@ -15,12 +8,19 @@ body {
   background-color: #fcfffc;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  body {
+    width: 460px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
-  color: #040f0f;
+  color: #fcfffc;
 }
 a {
   font-size: 2rem;
@@ -44,30 +44,48 @@ a:hover {
   border: 2px solid #6a7fdb;
   padding: 3px 13px;
 }
+.button2 {
+  background-color: #6a7fdb;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+.button2:hover {
+  background-color: #fcfffc;
+  border: 2px solid #6a7fdb;
+  padding: 13px 30px;
+}
+p {
+  color: #fcfffc;
+}
 .smallNav {
-  border: 2px solid blue;
   width: 1000px;
   background-color: #acadbc;
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .smallNav {
+    width: 460px;
+  }
+}
 .smallNav .potluck-title {
   width: 400px;
   height: 86px;
-  border: 2px solid red;
-  margin-right: 10px;
+  margin-right: 50px;
   margin-bottom: 20px;
 }
 .smallNav .signUp {
-  width: 280px;
-  border: 2px solid red;
-  margin-right: 10px;
-  flex-direction: row;
-  justify-content: center;
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 nav {
   width: 300px;
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,7 +99,6 @@ nav {
 }
 nav a {
   justify-content: space-around;
-  border: 2px solid green;
   width: 60px;
 }
 @media (max-width: 500px) {
@@ -97,6 +114,7 @@ footer {
 }
 h6 {
   background-color: #9b9ece;
+  border-radius: 8px;
   font-size: 1.4rem;
   text-align: center;
   color: #fcfffc;
@@ -152,7 +170,6 @@ nav a:hover {
   background-color: #9b9ece;
   padding: 20px;
   border-radius: 8px;
-  border: 2px solid blue;
   display: flex;
   flex-direction: row;
 }
@@ -167,15 +184,8 @@ nav a:hover {
   background-color: #9b9ece;
   padding: 20px;
   border-radius: 8px;
-  border: 2px solid blue;
   display: flex;
   flex-direction: row;
-}
-.container-2 .textbox2 h1 {
-  border: 2px solid red;
-}
-.container-2 .textbox2 p {
-  border: 2px solid red;
 }
 .container-2 .littlefam {
   width: 400px;
