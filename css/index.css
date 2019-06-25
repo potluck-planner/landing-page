@@ -34,17 +34,15 @@ a:hover {
 .button {
   background-color: #6a7fdb;
   border-radius: 8px;
-  border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 .button:hover {
   background-color: #fcfffc;
   border: 2px solid #6a7fdb;
-  padding: 13px 30px;
+  padding: 3px 13px;
 }
 .smallNav {
   border: 2px solid blue;
@@ -53,26 +51,25 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 500px) {
-  .smallNav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
 .smallNav .potluck-title {
+  width: 400px;
+  height: 86px;
   border: 2px solid red;
-  margin-right: 100px;
+  margin-right: 10px;
   margin-bottom: 20px;
 }
 .smallNav .signUp {
+  width: 280px;
   border: 2px solid red;
+  margin-right: 10px;
   flex-direction: row;
+  justify-content: center;
 }
 nav {
+  width: 300px;
   border: 2px solid red;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -83,6 +80,7 @@ nav {
   }
 }
 nav a {
+  justify-content: space-around;
   border: 2px solid green;
   width: 60px;
 }
@@ -148,25 +146,27 @@ nav a:hover {
   background-repeat: no-repeat;
 }
 .home {
-  width: 1000px;
+  width: 960px;
+  margin-top: 40px;
   margin-bottom: 40px;
+  background-color: #9b9ece;
+  padding: 20px;
+  border-radius: 8px;
   border: 2px solid blue;
   display: flex;
   flex-direction: row;
 }
-.home .textbox1 h1 {
-  border: 2px solid red;
-}
-.home .textbox1 p {
-  border: 2px solid red;
-}
 .home .brunch {
   width: 400px;
+  margin-right: 20px;
   border-radius: 8px;
 }
 .container-2 {
-  width: 1000px;
+  width: 960px;
   margin-bottom: 40px;
+  background-color: #9b9ece;
+  padding: 20px;
+  border-radius: 8px;
   border: 2px solid blue;
   display: flex;
   flex-direction: row;
@@ -179,5 +179,6 @@ nav a:hover {
 }
 .container-2 .littlefam {
   width: 400px;
+  margin-left: 20px;
   border-radius: 8px;
 }

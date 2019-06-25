@@ -1,8 +1,8 @@
 nav {
+  width: 300px;
   border: 2px solid red;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   @media @mobile {
     flex-direction: column;
@@ -10,6 +10,7 @@ nav {
     align-items: center;
   }
   a {
+    justify-content: space-around;
     border: 2px solid green;
     width: 60px;
     @media @mobile {
