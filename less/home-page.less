@@ -7,10 +7,15 @@
   border-radius: 8px;
   display: flex;
   flex-direction: row;
-
+    @media @mobile {
+      margin-top: 0;
+      width: 420px;
+      flex-direction: column;
+      text-align: center;
+    }
   .textbox1 {
     h1 {
-      
+
     }
     p {
 
@@ -20,6 +25,10 @@
     width: 400px;
     margin-right: 20px;
     border-radius: 8px;
+    @media @mobile {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 }
 
@@ -31,6 +40,11 @@
   border-radius: 8px;
   display: flex;
   flex-direction: row;
+  @media @mobile {
+    width: 420px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
   .textbox2 {
 
     h1 {
@@ -44,5 +58,9 @@
     width: 400px;
     margin-left: 20px;
     border-radius: 8px;
+    @media @mobile {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 }

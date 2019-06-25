@@ -5,6 +5,7 @@
   flex-direction: row;
   @media @mobile {
     width: 460px;
+    flex-wrap: wrap;
   }
   .potluck-title {
     width: 400px;
@@ -18,5 +19,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media @mobile {
+      margin-right: 0;
+      justify-content: space-between;
+      height: 100px;
+    }
   }
 }
