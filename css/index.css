@@ -46,6 +46,15 @@ nav a {
 nav a:hover {
   color: #6a7fdb;
 }
-div .img-block {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/potluck-spread.jpg");
+.hero {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/potluck-spread.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
