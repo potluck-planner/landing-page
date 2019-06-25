@@ -13,9 +13,19 @@ select(){
     this.tab.classList.add('feature-tabselected');
     this.TabContent.select();
 }
-
 }
 
+class TabContent{
+    constructor(element){
+    this.element = element;
+    }
+select(){
+    const items = document.querySelectorAll('.feature-content');
+    Array.from(items).forEach(item => item.classList.remove('feature-content-selected'))
+}
+
+
+}
 
 
 
