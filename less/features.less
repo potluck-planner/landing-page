@@ -1,3 +1,5 @@
+//navbar
+
 .smallNav{
     box-sizing: border-box;
     line-height: 1.6em;
@@ -38,6 +40,9 @@ nav a:hover{
  color: @indigo;
 }
 
+
+//hero image
+
 .hero{
     color: white;
     width: 100vw;
@@ -51,38 +56,58 @@ nav a:hover{
     background-repeat: no-repeat;
     
 }
+//tabs
 
-///testing tabs
-    // section{
-    // padding: 5em 0;
-    // font-size: 1.25em;
-    // min-height: 100%;
+.features{
+    width: 100%;
+   
+   .features-contents{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+   }
 
-    // };
+.features-content{
+    display: none;
+    width: 90%;
+    
+    .features-content-title{
+        font-size: 2.4em;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
 
-    // .tab-bar{
-    //     text-align: center;
-    // position: relative;
-    //     display: flex;
-    //     margin: 0 auto;
-    //     padding: 0;
-    //     max-width: 1200px;
-    //     list-style: none;
-    //     flex-flow: row wrap;
-    //     justify-content: center;
-    // }
 
-    // section, .tab-bar, 
-    // section:after, .tab-bar:after, 
-    // section:before, .tab-bar:before {
-    //     box-sizing: border-box;
-    // }
+}
 
-    // svg{
-    //     position: absolute;
-    //     left: 100%;
-    //     margin: 0;
-    //     width: 3em;
-    //     height: 100%;
-    //     fill: #bdc2c9;
-    // }
+.features-content-selected{
+    display: block;
+}
+
+.features-tabs{
+    display: flex;
+    background-color: @indigo;
+}
+
+.features-tab{
+    padding: 20px 25px;
+    font-size: 24px;
+    background-color: @indigo;
+    border-right: 1px solid white;
+    color: @white;
+    cursor: pointer;
+    &:hover {
+      background-color: @lavender;
+}
+}
+.features-tab-selected {
+    z-index:2;
+    border-right: 1px solid @indigo;
+    background-color: white;
+    color: black;
+    &:hover {
+        background-color: white;
+    }
+}
+}
