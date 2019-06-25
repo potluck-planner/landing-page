@@ -1,0 +1,30 @@
+nav {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media @mobile {
+    width: 460px;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: -12px;
+    margin-bottom: 10px;
+  }
+  a {
+    justify-content: space-around;
+    width: 60px;
+    @media @mobile {
+      width: 420px;
+      font-size: 3rem;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid @font-color;
+    }
+  }
+  a:hover {
+    @media @mobile {
+      color: @h1-color;
+      border: 2px solid @h1-color;
+    }
+  }
+}

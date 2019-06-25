@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Potluck Planner</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <header>
-      <img src="img/title.png" alt="potluck title">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Features</a>
-        <a href="about.html">About</a>
-      </nav>
+    <header class="smallNav">
+      <img class="potluck-title" src="img/title.png" alt="logo">
+        <div class="signUp">
+          <a href="#" class="button">Log In</a>
+          <a href="#" class="button">Sign Up</a>
+        </div>
+        <nav class="navBar">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="about.html">About</a>
+        </nav>
     </header>
+
     <section class="about-tabs">
         <div class = "about-tab about-tab-selected" data-tab="1">Team Lead</div>
         <div class = "about-tab about-tab-selected" data-tab="2">Web UI</div>
@@ -23,7 +30,7 @@
         <div class = "about-tab about-tab-selected" data-tab="5">Front End</div>
         <div class = "about-tab about-tab-selected" data-tab="6">Backend</div>
       </section>
-      
+
       <section class = "about-us-content">
         <div class = "about-content about-content-selected" data-tab="1">
           <h2 class = "content-title">Team Lead: Alex King</h2>
@@ -35,7 +42,7 @@
             natus!
           </p>
         </div>
-      
+
         <div class = "about-content" data-tab="2">
           <h2 class = "content-title">Web UI Developer: Connor McNamee</h2>
           <img class = "content-pic" src="" alt="placeholder" />
@@ -46,7 +53,7 @@
             natus!
           </p>
         </div>
-      
+
         <div class = "about-content" data-tab="3">
           <h2 class = "content-title">Web UI Developer: Brittany Moyers</h2>
           <img class = "content-pic" src="" alt="placeholder" />
@@ -88,9 +95,9 @@
               </p>
             </div>
     <footer>
-      <a href="index.html">Home</a>
-      <a href="#">Features</a>
-      <a href="about.html">About</a>
+      <a class="button2" href="index.html">Home</a>
+      <a class="button2" href="features.html">Features</a>
+      <a class="button2" href="about.html">About</a>
     </footer>
 
     <h6>Copyright Potluck Planner 2019</h6>
