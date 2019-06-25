@@ -159,7 +159,7 @@ h6 {
   box-sizing: border-box;
   line-height: 1.6em;
   margin: 0;
-  background-color: white;
+  background-color: #fcfffc;
 }
 .navBar {
   display: flex;
@@ -184,19 +184,30 @@ nav a {
   text-align: center;
 }
 nav a:hover {
-  color: #6a7fdb;
+  color: #040f0f;
 }
 .hero {
-  color: white;
-  width: 100vw;
-  height: 100vh;
+  margin-top: 40px;
+  width: 1000px;
+  height: 363px;
+  border-radius: 8px;
+  background-image: url("../img/potluck-spread-new.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/potluck-spread.jpg");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+  .hero {
+    margin-top: 0;
+    width: 460px;
+    height: 166px;
+    background-image: url("../img/potluck-spread-new-mobile.jpg");
+  }
+}
+.hero .features {
+  color: #fcfffc;
+  font-size: 6rem;
+  text-align: center;
 }
 .home {
   width: 960px;
