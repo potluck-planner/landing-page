@@ -33,7 +33,7 @@ h5 {
 }
 @media (max-width: 500px) {
   .button {
-    width: 430px;
+    width: 390px;
   }
 }
 .button:hover {
@@ -271,17 +271,20 @@ h6 {
   }
 }
 .home .textbox1 .signUp {
-  width: 200px;
+  border: 2px solid red;
+  width: 520px;
+  height: 160px;
   margin-right: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
   .home .textbox1 .signUp {
+    width: 420px;
+    height: 100px;
     margin-right: 0;
     justify-content: space-between;
-    height: 100px;
   }
 }
 .home .brunch {
