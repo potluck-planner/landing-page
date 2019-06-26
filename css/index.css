@@ -183,10 +183,11 @@ h6 {
   width: 100%;
 }
 .features .features-contents {
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   padding: 0px;
+  margin: 0 0 10px;
 }
 .features .features-content {
   display: none;
@@ -198,9 +199,20 @@ h6 {
   font-size: 2.4em;
   font-weight: bold;
   padding: 10px;
+  Width: 100%;
+}
+.features .features-content .features-content-pic {
+  width: 40%;
+  padding: 10px;
+  clip-path: circle(50% at 50% 50%);
+}
+.features .features-content .features-content-text {
+  width: 50%;
 }
 .features .features-content-selected {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border-top: none;
 }
 .features .features-tabs {
@@ -239,6 +251,7 @@ h6 {
   display: flex;
   justify-content: center;
   padding-top: 0px;
+  margin: 0 0 10px;
 }
 .bios .bios-content {
   display: none;
@@ -251,8 +264,17 @@ h6 {
   font-weight: bold;
   padding-bottom: 10px;
 }
+.bios .bios-content .bios-content-pic {
+  width: 40%;
+  padding: 10px;
+}
+.bios .bios-content .bios-content-text {
+  width: 50%;
+}
 .bios .bios-content-selected {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border-top: none;
 }
 .bios .bios-tabs {
