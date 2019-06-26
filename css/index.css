@@ -26,7 +26,7 @@ h5 {
 a {
   font-size: 2rem;
   font-weight: bold;
-  color: #6a7fdb;
+  color: #040f0f;
   text-decoration: none;
 }
 a:hover {
@@ -71,6 +71,7 @@ p {
   background-color: #fcfffc;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .smallNav {
@@ -82,35 +83,34 @@ p {
   width: 300px;
   height: 64px;
   margin-right: 50px;
-  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .smallNav .potluck-title {
-    margin-left: 30px;
+    margin-left: 70px;
   }
 }
 nav {
   width: 300px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   nav {
     width: 460px;
     flex-direction: column;
-    margin-top: 10px;
-    margin-left: -12px;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 }
 nav a {
   justify-content: space-around;
-  width: 60px;
 }
 @media (max-width: 500px) {
   nav a {
-    width: 420px;
+    text-align: center;
+    width: 455px;
     font-size: 3rem;
     border-radius: 8px;
     margin-bottom: 10px;
