@@ -27,33 +27,45 @@
 
 .features{
     width: 100%;
-
-   .features-contents{
+   
+   
+    .features-contents{
     height: 300px;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 0px;
    }
 
-.features-content{
-    display: none;
-    width: 90%;
+    .features-content{
+        display: none;
+        width: 100%;
+        box-shadow: 0 0 5px #888;
+        border: 1px solid black;
+        
+
+   
 
     .features-content-title{
         font-size: 2.4em;
         font-weight: bold;
-        padding-bottom: 10px;
+        padding: 10px;
     }
+
+    
 
 
 }
 
 .features-content-selected{
     display: block;
+    border-top: none;
+    
 }
 
 .features-tabs{
     display: flex;
+    
+    
     
 }
 }
@@ -61,22 +73,28 @@
 .features-tab{
     clip-path: polygon(76% 20%, 93% 35%, 100% 38%, 100% 70%, 100% 100%, 0 100%, 0 66%, 0% 14%, 62% 14%, 70% 15%);
     padding: 20px 25px;
-    font-size: 24px;
+    font-size: 1em;
+    width: 25%;
     background-color: @indigo;
-    border: 1px solid white;
     color: @white;
     cursor: pointer;
+    box-shadow: 0 0 5px #888;
+    border-bottom: 1px solid black;
+    
+
     &:hover {
       background-color: @lavender;
+      box-shadow: 0 5px 0 #fff, 0 0 5px #888;
       
 }
 .features-tab-selected {
     z-index:2;
-    border-right: 1px solid @indigo;
     background-color: white;
     color: black;
+    border: none;
     &:hover {
         background-color: white;
+        
     }
 }
 }
