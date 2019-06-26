@@ -202,26 +202,26 @@ h6 {
 }
 .features .features-tabs {
   display: flex;
-  background-color: #6a7fdb;
 }
-.features .features-tab {
+.features-tab {
+  clip-path: polygon(76% 20%, 93% 35%, 100% 38%, 100% 70%, 100% 100%, 0 100%, 0 66%, 0% 14%, 62% 14%, 70% 15%);
   padding: 20px 25px;
   font-size: 24px;
   background-color: #6a7fdb;
-  border-right: 1px solid white;
+  border: 1px solid white;
   color: #fcfffc;
   cursor: pointer;
 }
-.features .features-tab:hover {
+.features-tab:hover {
   background-color: #9b9ece;
 }
-.features .features-tab-selected {
+.features-tab .features-tab-selected {
   z-index: 2;
   border-right: 1px solid #6a7fdb;
   background-color: white;
   color: black;
 }
-.features .features-tab-selected:hover {
+.features-tab .features-tab-selected:hover {
   background-color: white;
 }
 .bios {
