@@ -155,7 +155,6 @@ h6 {
   width: 1000px;
   height: 363px;
   border-radius: 8px;
-  text-shadow: 8px 9px black;
   background-image: url("../img/potluck-spread-new.jpg");
   display: flex;
   justify-content: center;
@@ -171,8 +170,14 @@ h6 {
 }
 .hero .features {
   color: #fcfffc;
-  font-size: 6rem;
+  font-size: 10rem;
+  text-shadow: 5px 5px 10px #040f0f;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .hero .features {
+    font-size: 5rem;
+  }
 }
 .features {
   width: 100%;
