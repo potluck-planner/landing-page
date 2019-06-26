@@ -11,6 +11,10 @@ nav {
     margin-bottom: 10px;
   }
   a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: @font-color;
+    text-decoration: none;
     justify-content: space-around;
     @media @mobile {
       text-align: center;
@@ -22,9 +26,9 @@ nav {
     }
   }
   a:hover {
+    color: @footer-bg;
     @media @mobile {
-      color: @h1-color;
-      border: 2px solid @h1-color;
+      border: 2px solid @footer-bg;
     }
   }
 }
