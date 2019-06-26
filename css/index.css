@@ -24,27 +24,33 @@ h5 {
   color: #fcfffc;
 }
 .button {
-  background-color: #6a7fdb;
+  background-color: #9b9ece;
   border-radius: 8px;
-  color: white;
+  width: 200px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fcfffc;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .button {
-    width: 390px;
+    flex-direction: column;
+    width: 160px;
   }
 }
 .button:hover {
-  background-color: #fcfffc;
-  border: 2px solid #9b9ece;
-  padding: 3px 13px;
+  color: #6a7fdb;
+  background-color: #acadbc;
 }
 .button2 {
   background-color: #6a7fdb;
   border-radius: 8px;
-  color: white;
+  color: #fcfffc;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -113,11 +119,11 @@ nav a {
   }
 }
 nav a:hover {
-  color: #9b9ece;
+  color: #6a7fdb;
 }
 @media (max-width: 500px) {
   nav a:hover {
-    border: 2px solid #9b9ece;
+    border: 2px solid #6a7fdb;
   }
 }
 footer {
@@ -256,7 +262,7 @@ h6 {
   width: 960px;
   margin-top: 40px;
   margin-bottom: 40px;
-  background-color: #9b9ece;
+  background-color: #6a7fdb;
   padding: 20px;
   border-radius: 8px;
   display: flex;
@@ -270,8 +276,10 @@ h6 {
     text-align: center;
   }
 }
+.home .textbox1 h1 {
+  text-align: center;
+}
 .home .textbox1 .signUp {
-  border: 2px solid red;
   width: 520px;
   height: 160px;
   margin-right: 20px;
@@ -301,7 +309,7 @@ h6 {
 .container-2 {
   width: 960px;
   margin-bottom: 40px;
-  background-color: #9b9ece;
+  background-color: #6a7fdb;
   padding: 20px;
   border-radius: 8px;
   display: flex;

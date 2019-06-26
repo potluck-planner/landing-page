@@ -41,27 +41,33 @@ h5 {
 }
 
 .button {
-  background-color: @h1-color;
+  background-color: @footer-bg;
   border-radius: 8px;
-  color: white;
+  width: 200px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: @main-bg;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media @mobile {
-    width: 390px;
+    flex-direction: column;
+    width: 160px;
   }
 }
 
 .button:hover {
-  background-color: @main-bg;
-  border: 2px solid @footer-bg;
-  padding: 3px 13px;
+  color: @h1-color;
+  background-color: @sec-bg;
 }
 
 .button2 {
   background-color: @h1-color;
   border-radius: 8px;
-  color: white;
+  color: @main-bg;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
