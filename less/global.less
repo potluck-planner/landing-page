@@ -11,8 +11,8 @@ body {
   font-size: 2rem;
   @media @mobile {
     width: 460px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -44,6 +44,7 @@ h5 {
   background-color: @footer-bg;
   border-radius: 8px;
   width: 200px;
+  height: 100px;
   font-size: 4rem;
   font-weight: bold;
   color: @main-bg;
@@ -53,20 +54,23 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   @media @mobile {
     flex-direction: column;
     width: 160px;
+    height: 80px;
   }
 }
 
 .button:hover {
   color: @h1-color;
-  background-color: @sec-bg;
+  background-color: @main-bg;
 }
 
 .button2 {
   background-color: @h1-color;
   border-radius: 8px;
+  font-weight: bold;
   color: @main-bg;
   padding: 15px 32px;
   text-align: center;
@@ -75,6 +79,7 @@ h5 {
 
 .button2:hover {
   background-color: @main-bg;
+  color: @h1-color;
   border: 2px solid @h1-color;
   padding: 13px 30px;
 }
