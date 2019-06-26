@@ -6,49 +6,70 @@
     height: 300px;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 0px;
+    margin: 0 0 10px;
    }
 
 .bios-content{
     display: none;
-    width: 90%;
+    width: 100%;
+    box-shadow: 0 0 5px #888;
+    border: 1px solid black;
     
     .bios-content-title{
         font-size: 2.4em;
         font-weight: bold;
         padding-bottom: 10px;
     }
+    .bios-content-pic{
+        width: 40%;
+        padding: 10px;
+        
 
+    }
+
+    .bios-content-text{
+        width: 50%;
+    }
 
 }
 
 .bios-content-selected{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: none;
 }
 
 .bios-tabs{
     display: flex;
-    background-color: @indigo;
+  
 }
 
 .bios-tab{
+    clip-path: polygon(76% 20%, 93% 35%, 100% 38%, 100% 70%, 100% 100%, 0 100%, 0 66%, 0% 14%, 62% 14%, 70% 15%);
     padding: 20px 25px;
-    font-size: 24px;
+    font-size: 1em;
+    width: 25%;
     background-color: @indigo;
-    border-right: 1px solid white;
     color: @white;
     cursor: pointer;
+    box-shadow: 0 0 5px #888;
+    border-bottom: 1px solid black;
+    
+
     &:hover {
       background-color: @lavender;
+      box-shadow: 0 5px 0 #fff, 0 0 5px #888;
 }
 }
 .bios-tab-selected {
     z-index:2;
-    border-right: 1px solid @indigo;
-    background-color: white;
+    background-color: @lavender;
     color: black;
+    border: none;
     &:hover {
-        background-color: white;
+        background-color: @lavender;
     }
 }
 }
