@@ -68,7 +68,7 @@ p {
 }
 .smallNav {
   width: 1000px;
-  background-color: #acadbc;
+  background-color: #fcfffc;
   display: flex;
   flex-direction: row;
 }
@@ -79,28 +79,14 @@ p {
   }
 }
 .smallNav .potluck-title {
-  width: 400px;
-  height: 86px;
+  width: 300px;
+  height: 64px;
   margin-right: 50px;
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .smallNav .potluck-title {
     margin-left: 30px;
-  }
-}
-.smallNav .signUp {
-  width: 200px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-@media (max-width: 500px) {
-  .smallNav .signUp {
-    margin-right: 0;
-    justify-content: space-between;
-    height: 100px;
   }
 }
 nav {
@@ -285,6 +271,20 @@ h6 {
     width: 420px;
     flex-direction: column;
     text-align: center;
+  }
+}
+.home .textbox1 .signUp {
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .home .textbox1 .signUp {
+    margin-right: 0;
+    justify-content: space-between;
+    height: 100px;
   }
 }
 .home .brunch {
