@@ -207,6 +207,96 @@ nav a {
   font-size: 6rem;
   text-align: center;
 }
+.features {
+  width: 100%;
+}
+.features .features-contents {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.features .features-content {
+  display: none;
+  width: 90%;
+}
+.features .features-content .features-content-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.features .features-content-selected {
+  display: block;
+}
+.features .features-tabs {
+  display: flex;
+  background-color: #6a7fdb;
+}
+.features .features-tab {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #6a7fdb;
+  border-right: 1px solid white;
+  color: #fcfffc;
+  cursor: pointer;
+}
+.features .features-tab:hover {
+  background-color: #9b9ece;
+}
+.features .features-tab-selected {
+  z-index: 2;
+  border-right: 1px solid #6a7fdb;
+  background-color: white;
+  color: black;
+}
+.features .features-tab-selected:hover {
+  background-color: white;
+}
+.bios {
+  width: 100%;
+}
+.bios .bios-contents {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.bios .bios-content {
+  display: none;
+  width: 90%;
+}
+.bios .bios-content .bios-content-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.bios .bios-content-selected {
+  display: block;
+}
+.bios .bios-tabs {
+  display: flex;
+  background-color: #6a7fdb;
+}
+.bios .bios-tab {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #6a7fdb;
+  border-right: 1px solid white;
+  color: #fcfffc;
+  cursor: pointer;
+}
+.bios .bios-tab:hover {
+  background-color: #9b9ece;
+}
+.bios .bios-tab-selected {
+  z-index: 2;
+  border-right: 1px solid #6a7fdb;
+  background-color: white;
+  color: black;
+}
+.bios .bios-tab-selected:hover {
+  background-color: white;
+}
 .home {
   width: 960px;
   margin-top: 40px;

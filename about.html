@@ -10,10 +10,11 @@
 
   <body>
     <header class="smallNav">
+        <script defer='defer' src="./js/about.js"></script>
       <img class="potluck-title" src="img/title.png" alt="logo">
         <div class="signUp">
-          <a href="#" class="button">Log In</a>
-          <a href="#" class="button">Sign Up</a>
+          <a href="https://potluckplanner.netlify.com/login" class="button">Log In</a>
+          <a href="https://potluckplanner.netlify.com/signup" class="button">Sign Up</a>
         </div>
         <nav class="navBar">
           <a href="index.html">Home</a>
@@ -22,78 +23,61 @@
         </nav>
     </header>
 
-    <section class="about-tabs">
-        <div class = "about-tab about-tab-selected" data-tab="1">Team Lead</div>
-        <div class = "about-tab about-tab-selected" data-tab="2">Web UI</div>
-        <div class = "about-tab about-tab-selected" data-tab="3">Web UI</div>
-        <div class = "about-tab about-tab-selected" data-tab="4">Front End</div>
-        <div class = "about-tab about-tab-selected" data-tab="5">Front End</div>
-        <div class = "about-tab about-tab-selected" data-tab="6">Backend</div>
-      </section>
-
-      <section class = "about-us-content">
-        <div class = "about-content about-content-selected" data-tab="1">
-          <h2 class = "content-title">Team Lead: Alex King</h2>
-          <img class = "content-pic" src="" alt="placeholder" />
-          <p class = "content-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
-            perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
-            voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
-            natus!
-          </p>
-        </div>
-
-        <div class = "about-content" data-tab="2">
-          <h2 class = "content-title">Web UI Developer: Connor McNamee</h2>
-          <img class = "content-pic" src="" alt="placeholder" />
-          <p class = "content-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
-            perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
-            voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
-            natus!
-          </p>
-        </div>
-
-        <div class = "about-content" data-tab="3">
-          <h2 class = "content-title">Web UI Developer: Brittany Moyers</h2>
-          <img class = "content-pic" src="" alt="placeholder" />
-          <p class = "content-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
-              perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
-              voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
-              natus!
-          </p>
-        </div>
-        <div class = "about-content" data-tab="4">
-          <h2 class = "content-title">Front End Architect: Cassandra Springer</h2>
-          <img class = "content-pic" src="" alt="placeholder" />
-          <p class = "content-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
-            perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
-            voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
-            natus!
-          </p>
-        </div>
-        <div class = "about-content" data-tab="5">
-            <h2 class = "content-title">Front End Architect: Ang Xu</h2>
-            <img class = "content-pic" src="" alt="placeholder" />
-            <p class = "content-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
-              perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
-              voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
-              natus!
-            </p>
+    <section>
+      <div class= "bios">
+          <div class = "bios-tabs">
+            <div class = "bios-tab bios-tab-selected" data-tab="1">Easy Sign-Up</div>
+            <div class = "bios-tab " data-tab="2">Create Events</div>
+            <div class = "bios-tab " data-tab="3">Menu Management</div>
+            <div class = "bios-tab " data-tab="4">Track the Details</div>
           </div>
-          <div class = "about-content" data-tab="6">
-              <h2 class = "content-title">Backend Architect: Erik Sandoval</h2>
-              <img class = "content-pic" src="" alt="placeholder" />
-              <p class = "content-text">
+    
+          <div class = "bios-contents">
+            <div class = "bios-content bios-content-selected" data-tab="1">
+              <div class = "bios-content-title">Signing Up is Easy</div>
+              <div class = "bios -content-pic"><img  src="" alt="placeholder"/></div>
+              <div class = "bios-content-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
                 perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
                 voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
                 natus!
-              </p>
+              </div>
             </div>
+    
+            <div class = "bios-content" data-tab="2">
+                <div class = "bios-content-title">Create Events</div>
+                <div class = "bios-content-pic"><img  src="" alt="placeholder"/></div>
+                <div class = "bios-content-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
+                  perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
+                  voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
+                  natus!
+                </div>
+            </div>
+    
+            <div class = "bios-content" data-tab="3">
+                <div class = "bios-content-title">No More Duplicate Events</div>
+                <div class = "bios-content-pic"><img  src="" alt="placeholder"/></div>
+                <div class = "bios-content-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
+                  perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
+                  voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
+                  natus!
+                </div>
+            </div>
+            <div class = "bios-content" data-tab="4">
+                <div class = "bios-content-title">Keep Everyone Updated</div>
+                <div class = "bios-content-pic"><img  src="" alt="placeholder"/></div>
+                <div class = "bios-content-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla qui
+                  perferendis quis necessitatibus et fugiat quod omnis! Vel perspiciatis
+                  voluptatum possimus! Recusandae similique nam qui itaque reiciendis iure
+                  natus!
+                </div>
+            </div>
+      </div>
+      </div>
+      </section>
     <footer>
       <a class="button2" href="index.html">Home</a>
       <a class="button2" href="features.html">Features</a>
