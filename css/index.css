@@ -197,6 +197,8 @@ h6 {
   padding: 20px;
   padding-bottom: 40px;
   border: 2px solid #6a7fdb;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   align-items: center;
 }
 .features .features-content .features-content-title {
@@ -306,6 +308,8 @@ h6 {
   padding: 20px;
   padding-bottom: 40px;
   border: 2px solid #6a7fdb;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   align-items: center;
 }
 .bios .bios-content .bios-content-title {
@@ -340,7 +344,7 @@ h6 {
 }
 .bios-tab {
   clip-path: polygon(76% 20%, 93% 35%, 100% 38%, 100% 70%, 100% 100%, 0 100%, 0 66%, 0% 14%, 62% 14%, 70% 15%);
-  padding: 20px 25px;
+  padding: 20px 15px;
   font-size: 1em;
   text-align: left;
   width: 100%;
@@ -353,7 +357,7 @@ h6 {
 @media (max-width: 500px) {
   .bios-tab {
     width: 16.6%;
-    padding: 20px 2px;
+    padding: 20px 3px;
     font-size: 1.2rem;
   }
 }
