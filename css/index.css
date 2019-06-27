@@ -152,6 +152,7 @@ h6 {
 }
 .hero {
   margin-top: 40px;
+  margin-bottom: 30px;
   width: 1000px;
   height: 363px;
   border-radius: 8px;
@@ -187,7 +188,7 @@ h6 {
   display: flex;
   justify-content: center;
   padding: 0px;
-  margin: 0 0 10px;
+  margin: 0 0 40px;
 }
 .features .features-content {
   display: none;
@@ -241,6 +242,7 @@ h6 {
 }
 .about-banner {
   margin-top: 40px;
+  margin-bottom: 30px;
   width: 1000px;
   height: 363px;
   border-radius: 8px;
@@ -254,8 +256,17 @@ h6 {
     margin-top: 0;
     width: 460px;
     height: 166px;
-    background-image: url("../img/ian-schneider-TamMbr4okv4-unsplash.jpg");
+    background-image: url("../img/ian-schneider-TamMbr4okv4-unsplash-mobile.jpg");
     background-size: scale-down;
+  }
+}
+.about-banner h1 {
+  font-size: 10rem;
+  text-shadow: 5px 5px 10px #040f0f;
+}
+@media (max-width: 500px) {
+  .about-banner h1 {
+    font-size: 5rem;
   }
 }
 .bios {
@@ -266,7 +277,7 @@ h6 {
   display: flex;
   justify-content: center;
   padding: 0px;
-  margin: 0 0 10px;
+  margin: 0 0 40px;
 }
 .bios .bios-content {
   display: none;
