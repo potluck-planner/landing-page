@@ -239,14 +239,33 @@ h6 {
 .features-tab .features-tab-selected:hover {
   background-color: #9b9ece;
 }
+.about-banner {
+  margin-top: 40px;
+  width: 1000px;
+  height: 363px;
+  border-radius: 8px;
+  background-image: url("../img/ian-schneider-TamMbr4okv4-unsplash.jpg");
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .about-banner {
+    margin-top: 0;
+    width: 460px;
+    height: 166px;
+    background-image: url("../img/ian-schneider-TamMbr4okv4-unsplash.jpg");
+  }
+}
 .bios {
   width: 100%;
 }
 .bios .bios-contents {
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  padding-top: 0px;
+  padding: 0px;
   margin: 0 0 10px;
 }
 .bios .bios-content {
@@ -259,7 +278,12 @@ h6 {
 .bios .bios-content .bios-content-title {
   font-size: 2.4em;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 10px;
+  Width: 100%;
+}
+.bios .bios-content .bios-content-pic {
+  height: 250px;
+  width: auto;
 }
 .bios .bios-content .bios-content-text {
   width: 50%;
@@ -273,9 +297,11 @@ h6 {
 .bios .bios-tabs {
   display: flex;
 }
-.bios .bios-tab {
+.bios-tab {
+  clip-path: polygon(76% 20%, 93% 35%, 100% 38%, 100% 70%, 100% 100%, 0 100%, 0 66%, 0% 14%, 62% 14%, 70% 15%);
   padding: 20px 25px;
   font-size: 1em;
+  text-align: center;
   width: 25%;
   background-color: #6a7fdb;
   color: #fcfffc;
@@ -283,17 +309,17 @@ h6 {
   box-shadow: 0 0 5px #888;
   border-bottom: 1px solid black;
 }
-.bios .bios-tab:hover {
+.bios-tab:hover {
   background-color: #9b9ece;
   box-shadow: 0 5px 0 #fff, 0 0 5px #888;
 }
-.bios .bios-tab-selected {
+.bios-tab .bios-tab-selected {
   z-index: 2;
   background-color: #9b9ece;
   color: black;
   border: none;
 }
-.bios .bios-tab-selected:hover {
+.bios-tab .bios-tab-selected:hover {
   background-color: #9b9ece;
 }
 .home {
