@@ -194,17 +194,13 @@ h6 {
   width: 100%;
   box-shadow: 0 0 5px #888;
   border: 1px solid black;
+  align-items: center;
 }
 .features .features-content .features-content-title {
   font-size: 2.4em;
   font-weight: bold;
   padding: 10px;
-  Width: 100%;
-}
-.features .features-content .features-content-pic {
-  width: 40%;
-  padding: 10px;
-  clip-path: circle(50% at 50% 50%);
+  width: 100%;
 }
 .features .features-content .features-content-text {
   width: 50%;
@@ -243,14 +239,33 @@ h6 {
 .features-tab .features-tab-selected:hover {
   background-color: #9b9ece;
 }
+.about-banner {
+  margin-top: 40px;
+  width: 1000px;
+  height: 363px;
+  border-radius: 8px;
+  background-image: url("../img/ian-schneider-TamMbr4okv4-unsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .about-banner {
+    margin-top: 0;
+    width: 460px;
+    height: 166px;
+    background-image: url("../img/ian-schneider-TamMbr4okv4-unsplash.jpg");
+    background-size: scale-down;
+  }
+}
 .bios {
   width: 100%;
 }
 .bios .bios-contents {
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  padding-top: 0px;
+  padding: 0px;
   margin: 0 0 10px;
 }
 .bios .bios-content {
@@ -258,15 +273,17 @@ h6 {
   width: 100%;
   box-shadow: 0 0 5px #888;
   border: 1px solid black;
+  align-items: center;
 }
 .bios .bios-content .bios-content-title {
   font-size: 2.4em;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 10px;
+  width: 100%;
 }
 .bios .bios-content .bios-content-pic {
-  width: 40%;
-  padding: 10px;
+  height: 250px;
+  width: auto;
 }
 .bios .bios-content .bios-content-text {
   width: 50%;
@@ -280,28 +297,28 @@ h6 {
 .bios .bios-tabs {
   display: flex;
 }
-.bios .bios-tab {
+.bios-tab {
   clip-path: polygon(76% 20%, 93% 35%, 100% 38%, 100% 70%, 100% 100%, 0 100%, 0 66%, 0% 14%, 62% 14%, 70% 15%);
   padding: 20px 25px;
   font-size: 1em;
-  width: 25%;
+  text-align: center;
   background-color: #6a7fdb;
   color: #fcfffc;
   cursor: pointer;
   box-shadow: 0 0 5px #888;
   border-bottom: 1px solid black;
 }
-.bios .bios-tab:hover {
+.bios-tab:hover {
   background-color: #9b9ece;
   box-shadow: 0 5px 0 #fff, 0 0 5px #888;
 }
-.bios .bios-tab-selected {
+.bios-tab .bios-tab-selected {
   z-index: 2;
   background-color: #9b9ece;
   color: black;
   border: none;
 }
-.bios .bios-tab-selected:hover {
+.bios-tab .bios-tab-selected:hover {
   background-color: #9b9ece;
 }
 .home {
