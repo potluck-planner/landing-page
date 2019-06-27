@@ -30,7 +30,7 @@
   width: 100%;
 
   .features-contents {
-    height: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 0px;
@@ -41,17 +41,27 @@
     display: none;
     width: 100%;
     box-shadow: 0 0 5px #888;
-    border: 1px solid black;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 2px solid @indigo;
     align-items: center;
 
     .features-content-title {
       font-size: 2.4em;
       font-weight: bold;
-      padding: 10px;
+      text-align: center;
+      padding-bottom: 20px;
       width: 100%;
+    }
+    img {
+      border-radius: 8px;
     }
     .features-content-text {
       width: 50%;
+      @media @mobile {
+        width: 75%;
+        padding-top: 20px;
+      }
     }
   }
 
@@ -82,16 +92,20 @@
   );
   padding: 20px 25px;
   font-size: 1em;
-  text-align: center;
-  width: 25%;
+  text-align: left;
+  width: 100%;
   background-color: @indigo;
   color: @white;
   cursor: pointer;
   box-shadow: 0 0 5px #888;
-  border-bottom: 1px solid black;
-
+  border-bottom: 2px solid @indigo;
+  @media @mobile {
+    width: 25%;
+    padding: 20px 15px;
+  }
   &:hover {
     background-color: @lavender;
+    border-bottom: 2px solid @lavender;
     box-shadow: 0 5px 0 #fff, 0 0 5px #888;
   }
   .features-tab-selected {
