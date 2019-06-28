@@ -6,6 +6,7 @@ body {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   background-color: #fcfffc;
   font-size: 2rem;
 }
@@ -144,11 +145,12 @@ footer {
 }
 h6 {
   background-color: #9b9ece;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
   font-size: 1.4rem;
   text-align: center;
   color: #040f0f;
   padding: 20px;
+  margin-bottom: 0;
 }
 .hero {
   margin-top: 40px;
