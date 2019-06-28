@@ -3,11 +3,8 @@ class FeatureTab {
     constructor(tab) {
       this.tab = tab;
       this.data = tab.dataset.tab 
-      console.log('this.data',this.data);
       this.itemElement = document.querySelector(`.features-content[data-tab="${this.data}"]`);
-      console.log('this.itemElement',this.itemElement);
       this.featureContent = new FeatureContent(this.itemElement);
-      console.log(this.featureContent)
       tab.addEventListener('click', () => this.select())
   
     };
@@ -38,7 +35,6 @@ class FeatureTab {
   let tabs = document.querySelectorAll('.features-tab')
   
   tabs.forEach((tab) => {
-    console.log(tabs)
      new FeatureTab(tab) 
     
     });

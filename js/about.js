@@ -3,11 +3,8 @@ class BioTab {
     constructor(tab) {
       this.tab = tab;
       this.data = tab.dataset.tab 
-      console.log('this.data',this.data);
       this.itemElement = document.querySelector(`.bios-content[data-tab="${this.data}"]`);
-      console.log('this.itemElement',this.itemElement);
       this.bioContent = new BioContent(this.itemElement);
-      console.log(this.bioContent)
       tab.addEventListener('click', () => this.select())
   
     };
@@ -38,7 +35,6 @@ class BioTab {
   let tabs = document.querySelectorAll('.bios-tab')
   
   tabs.forEach((tab) => {
-    console.log(tabs)
      new BioTab(tab) 
     
     });
